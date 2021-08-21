@@ -17,7 +17,7 @@ const deliveryFee = document.getElementById('delivery-fee')
 // price part
 const bestprice = document.getElementById('best-price');
 const totalPrice = document.getElementById('total-price');
-const total = document.getElementById('total');
+let total = document.getElementById('total');
 
 function priceUpdate() {
     const fixedPrice = parseInt(bestprice.innerText);
@@ -60,4 +60,29 @@ freeDelivery.addEventListener('click', function () {
 chargeDelivery.addEventListener('click', function () {
     deliveryFee.innerText = 20;
     priceUpdate()
-})
+});
+
+// Add pomocode
+
+const promoCodeSubmit = document.getElementById('apply-button');
+let promoCodeApply = document.getElementById('pomo-field');
+
+promoCodeSubmit.addEventListener('click', function () {
+    promoCode()
+});
+
+function promoCode() {
+    if (promoCodeApply.value == 'jubayer') {
+        promoCodeApply.disabled = true;
+        promoCodeApply.disabled = true;
+        total.innerText = parseInt(total.innerText) - (parseInt(total.innerText) / 100) * 20;
+        promoCodeApply.value = " ";
+
+    }
+    else {
+        promoCodeSubmit.disabled = false;
+        promoCodeApply.disabled = false;
+    }
+}
+
+
