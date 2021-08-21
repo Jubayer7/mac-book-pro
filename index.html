@@ -5,11 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Main-book-pro</title>
 </head>
 
 <body>
+    <header>
 
+    </header>
+    <main>
+        <section class="mx-auto">
+            <div class="grid grid-cols-2 gap-5 w-3/4 mx-auto">
+                <div class="">
+                    <img src="images/mac.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-4xl">
+                        Customize your Blue your 24-inch iMac with apple M1 chip.
+                    </h2>
+                    <p>
+                        Apple M1 with 4-core CPU with 4 perfomance coues and 4 efficiency cores, 7-core, GPU and 16-core
+                        Neural Engine 8GB unified memory 256Gb SSD storage Two Rhunderbolt/USB 4 ports Magic Mouse Magic
+                        Keyboard. Us English.
+                    </p>
+                    <!-- Memory Part -->
+
+                    <h4 class="font-bold mt-4">
+                        Memory
+                    </h4>
+                    <button id="small-memory" class="border border-current p-1 rounded">8GB unified memory</button>
+                    <button id="big-memory" class="border border-current p-1 rounded">16GB unified memory</button>
+                    <!-- storage part -->
+
+                    <h4 class="font-bold mt-4">
+                        Storage
+                    </h4>
+                    <button id="low-ssd" class="border border-current p-1 rounded">256GB SSD storage</button>
+                    <button id="medium-ssd" class="border border-current p-1 rounded">256GB SSD storage</button>
+                    <button id="high-ssd" class="border border-current p-1 rounded">1TB SSD storage</button>
+                    <!-- Delivery Part -->
+
+                    <h4 class="font-bold mt-4">
+                        Chose your delivery option
+                    </h4>
+                    <button id="free-delivery" class="border border-current p-1 rounded mt-1">Friday,Aug 25 free prime
+                        delivery</button>
+                    <button id="charge-delivery" class="border border-current p-1 rounded">Fri,Aug 21 delivery charge
+                        $20</button>
+                    <!-- Price List -->
+                    <div class="flex space-x-40 mt-4">
+                        <p class="font-bold">Best price</p>
+                        <p class="font-bold">$<span id="best-price" class="font-bold">1299</span></p>
+                    </div>
+                    <hr>
+                    <div class="flex space-x-28 font-bold ">
+                        <p>Extra Memory Cost</p>
+                        <p>$<span id="extra-memory">0</span></p>
+
+                    </div>
+                    <hr>
+                    <div class="flex space-x-32">
+                        <p class="font-bold">Extra Storage Cost</p>
+                        <p class="font-bold">$<span id="extra-store" class="font-bold">0</span></p>
+                    </div>
+                    <hr>
+
+                    <div class="flex space-x-36 ">
+                        <p class="font-bold">Delivery Charge</p>
+                        <p class="font-bold">$<span id="delivery-fee" class="font-bold">0</span></p>
+                    </div>
+                    <hr class="border-black	">
+
+                    <div class="flex space-x-40">
+                        <p class="font-bold">Total Price</p>
+                        <p class="font-bold">$<span id="total-price" class="font-bold">1299</span></p>
+                    </div>
+                    <hr>
+                    <!-- Pomo code -->
+                    <div class="mb-2 mt-2">
+                        <p>Add pomo code</p>
+                        <input class="border-2" type="text" name="" id="">
+                        <button class="text-white bg-red-400 px-3 py-1 rounded">Apply</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <hr>
+        <section class="mt-4">
+            <div class="text-4xl text-center">
+                <h2 cla>Total:$<span id="total">1299</span></h2>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="customize.js"></script>
 </body>
 
 </html>
